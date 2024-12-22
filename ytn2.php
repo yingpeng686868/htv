@@ -21,7 +21,7 @@ if ($_GET['ts'] == ""){
     curl_close($ch);
     preg_match_all('|(.*?).ts|i',$data,$url);
     for($i=0;$i<count($url[0]);$i++){
-        $data = str_replace($url[0][$i],'http://vip.ybeke.com/ytn.php?ts=https://ytnw-mcdn.tving.com/ytnw/live2000.smil/'.$url[0][$i],$data);
+        $data = str_replace($url[0][$i],'https://raw.githubusercontent.com/yingpeng686868/htv/refs/heads/main/ytn2.php?ts=https://ytnw-mcdn.tving.com/ytnw/live2000.smil/'.$url[0][$i],$data);
     }
         //var_dump($url);
     print_r($data);
